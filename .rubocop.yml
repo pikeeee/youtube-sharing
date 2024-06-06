@@ -1,0 +1,68 @@
+inherit_mode:
+  merge:
+    - Exclude
+
+require:
+  - rubocop-rails
+  - rubocop-performance
+
+AllCops:
+  TargetRubyVersion: 3.1.4
+  Exclude:
+    - "vendor/**/*"
+    - "db/schema.rb"
+    - "db/seeds.rb"
+    - "db/migrate/*"
+    - "bin/*"
+    - "lib/tasks/*"
+    - "config/initializers/*"
+    - "Rakefile"
+    - "tmp/*"
+  UseCache: false
+
+Rails:
+  Enabled: true
+Style/Documentation:
+  Enabled: false
+Rails/Output:
+  Enabled: true
+Rails/Date:
+  Enabled: true
+Rails/FilePath:
+  Enabled: false
+Rails/FindBy:
+  Enabled: true
+Rails/FindEach:
+  Enabled: true
+Rails/PluralizationGrammar:
+  Enabled: true
+Rails/ScopeArgs:
+  Enabled: true
+Rails/TimeZone:
+  Enabled: true
+Rails/ActiveRecordCallbacksOrder:
+  Enabled: true
+Rails/AfterCommitOverride:
+  Enabled: false
+
+Style/ArgumentsForwarding:
+  Enabled: false
+
+Style/StringLiterals:
+  EnforcedStyle: single_quotes
+  Exclude:
+    - "config/environments/*"
+    - "config/*"
+    - "config.ru"
+
+Style/BlockComments:
+  Exclude:
+    - "spec/*"
+
+Layout/SpaceInsideHashLiteralBraces:
+  EnforcedStyle: space
+  EnforcedStyleForEmptyBraces: no_space
+
+Layout/SpaceInsideArrayLiteralBrackets:
+  EnforcedStyle: no_space
+  EnforcedStyleForEmptyBrackets: no_space
