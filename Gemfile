@@ -56,6 +56,9 @@ gem 'pagy', '~> 5.8', '>= 5.8.1'
 # batch job
 gem 'sidekiq', '~> 7.2', '>= 7.2.4'
 
+# for google api
+gem 'google-api-client', '~> 0.53.0'
+
 # Use Sass to process CSS
 # gem "sassc-rails"
 
