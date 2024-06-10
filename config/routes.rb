@@ -1,10 +1,16 @@
 # frozen_string_literal: true
 
 Rails.application.routes.draw do
+  root "videos#index"
+
   resources :users, only: %i[create show]
+  resources :videos, only: %i[create update destroy edit]
+
   get '/signup', to: 'users#new'
   get '/login', to: 'sessions#new'
-  post '/sessions', to: 'sessions#create'
-  delete '/sessions', to: 'sessions#destroy'
+  get '/share', to: 'videos#new'
+
+  resource :sessions, only: %i[create destroy]
+
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
