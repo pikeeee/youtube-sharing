@@ -33,7 +33,7 @@ Running the Docker Container
 2. Run the Docker container:
 
 ```sh
-docker run -p 3000:3000 your-image-name
+docker run -p 3000:3000 share-youtube
 ```
 Now, the application should be accessible at http://localhost:3000.
 
