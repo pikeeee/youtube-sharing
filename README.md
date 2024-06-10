@@ -41,7 +41,7 @@ Now, the application should be accessible at http://localhost:3000.
 
 1. Clone the repository
 ```sh
-git clone https://github.com/yourusername/yourproject.git
+git clone https://github.com/pikeeee/youtube-sharing
 ```
 
 2.Install Ruby dependencies
