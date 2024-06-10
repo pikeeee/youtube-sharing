@@ -5,6 +5,7 @@
 # Table name: videos
 #
 #  id         :bigint           not null, primary key
+#  title      :string
 #  url        :string
 #  created_at :datetime         not null
 #  updated_at :datetime         not null
@@ -16,5 +17,8 @@
 #
 FactoryBot.define do
   factory :video do
+    url { 'https://www.youtube.com/watch?v=dQw4w9WgXcQ' }
+    title { 'Rick Astley - Never Gonna Give You Up' }
+    user
   end
 end

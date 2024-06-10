@@ -76,6 +76,8 @@ group :development, :test do
   # Generate fake data for use in tests.
   gem 'faker', '~> 3.3', '>= 3.3.1'
   # RSpec behavioral testing framework for Rails
+  gem 'pry', '~> 0.14.2'
+  gem 'rails-controller-testing', '~> 1.0', '>= 1.0.5'
   gem 'rspec-rails', '~> 6.1.2'
 end
 
@@ -87,7 +89,6 @@ group :development do
   gem 'rubocop-rails', '~> 2.25'
   gem 'web-console'
   # debug
-  gem 'pry', '~> 0.14.2'
 
   # Add speed badges [https://github.com/MiniProfiler/rack-mini-profiler]
   # gem "rack-mini-profiler"

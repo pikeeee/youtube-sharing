@@ -25,6 +25,7 @@ ActiveRecord::Schema[7.0].define(version: 2024_06_07_022715) do
   create_table "videos", force: :cascade do |t|
     t.integer "user_id", null: false
     t.string "url"
+    t.string "title"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["user_id"], name: "index_videos_on_user_id"

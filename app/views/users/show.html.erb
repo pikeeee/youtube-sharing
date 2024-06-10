@@ -1,5 +1,6 @@
-<h1>Welcome to the page of <%= @user.username %></h2>
+<h1>Welcome to the page of <%= @user.username %></h1>
 
 <% if current_user == @user %>
   <h3>This is my page!!!</h3>
+  <%= link_to 'Share Video', share_path, class: 'btn btn-primary' %>
 <% end %>

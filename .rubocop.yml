@@ -18,6 +18,7 @@ AllCops:
     - "config/initializers/*"
     - "Rakefile"
     - "tmp/*"
+    - "spec/**/*"
   UseCache: false
 
 Rails:
