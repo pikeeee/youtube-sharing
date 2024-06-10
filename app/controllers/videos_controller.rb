@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 class VideosController < ApplicationController
-  before_action :authorized, only: %i[new create]
+  before_action :authorized, only: %i[new create edit update]
   before_action :find_video, only: %i[edit update]
 
   def index
@@ -34,9 +34,8 @@ class VideosController < ApplicationController
 
   def create
     @video = current_user.videos.build(video_params)
-
     if @video.save
-      redirect_to root_path, notice: 'Video shared successfully!'
+      redirect_to root_path, notice: 'Video added successfully!'
     else
       render :new
     end
